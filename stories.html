@@ -48,13 +48,13 @@
 	    <div class="collapse navbar-collapse" id="navigation-index">
 	    	<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="sign_in_page.html" target="_blank">
-						<i class="material-icons">dashboard</i> Login
+					<a href="profile.html" target="_blank">
+						<i class="material-icons">dashboard</i>My Page
 					</a>
 				</li>
 				<li>
-					<a href="second_sign_in.html" target="_blank">
-						<i class="material-icons" >unarchive</i> Join Us
+					<a href="main_p2p.html" target="_blank">
+						<i class="material-icons" >unarchive</i> Logout
 					</a>
 				</li>
 				<li>
@@ -112,6 +112,7 @@
 				            <th>Story</th>
 				            <th>Since</th>
 				            <th>Expires in</th>
+				            <th>Rate</th>
 				            <th class="text-right">Amount</th>
 				            <th class="text-right">Received</th>
 				            <th class="text-right">Actions</th>
@@ -124,29 +125,11 @@
 				            <td>Need money for furniture purchase</td>
 				            <td>2015-01-01</td>
 				            <td>7 days</td>
+				            <td>2.5%</td>
 				            <td class="text-right">&euro; 9,225</td>
 				            <td class="text-right">&euro; 1,000</td>
 				            <td class="td-actions text-right">
-				            	<div>
 				                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Details</button>
-				                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-								  <div class="modal-dialog">
-								    <div class="modal-content">
-								      <div class="modal-header">
-								        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-								      </div>
-								      <div class="modal-body">
-								        We want to renovate our apartment and it costs a lot for the inner renovation and decoration. This month we spent all the savings we have and we really need some extra money. We will pay it back next month as soon as we receive our salary.
-								      </div>
-								      <div class="modal-footer">
-								        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-								        <button type="button" class="btn btn-info btn-simple">Save</button>
-								      </div>
-								    </div>
-								  </div>
-								</div>
-							</div>
 				            </td>
 
 				        </tr>
@@ -156,6 +139,7 @@
 				            <td>Build my own startup with great ideas</td>
 				            <td>2015-01-01</td>
 				            <td>7 days</td>
+				            <td>5%</td>
 				            <td class="text-right">&euro; 300,000</td>
 				            <td class="text-right">&euro; 30,000</td>
 				            <td class="td-actions text-right">
@@ -168,6 +152,7 @@
 				            <td>I really want that Gucci bag</td>
 				            <td>2015-01-01</td>
 				            <td>7 days</td>
+				            <td>3.5%</td>
 				            <td class="text-right">&euro; 3,000</td>
 				            <td class="text-right">&euro; 1,500</td>
 				            <td class="td-actions text-right">
@@ -184,9 +169,31 @@
 	</div>
 
 </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Story Details</h4>
+      </div>
+      <div class="modal-body">
+        We want to renovate our apartment and it costs a lot for the inner renovation and decoration. This month we spent all the savings we have and we really need some extra money. We will pay it back next month as soon as we receive our salary.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">No interests!</button>
+        <button type="button" class="btn btn-info btn-simple" data-dismiss="modal">I want to Loan!</button>
+        <button type="button" class="btn btn-info btn-simple" data-dismiss="modal" id="ssbutton" type="submit">Know more about the applicant!</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
-
+	<script type="text/javascript">
+    document.getElementById("ssbutton").onclick = function () {
+        location.href = "profileB.html";
+    };
+	</script>
 	<!--   Core JS Files   -->
 	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
