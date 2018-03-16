@@ -47,11 +47,7 @@
 
 	    <div class="collapse navbar-collapse" id="navigation-index">
 	    	<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="sign_in_page.html" target="_blank">
-						<i class="material-icons">dashboard</i> Login
-					</a>
-				</li>
+
 				<li>
 					<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
 						<i class="material-icons">unarchive</i> Join Us
@@ -86,11 +82,33 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<div class="brand">
-						<h1>P2P Loan</h1>
-						<h3>Peer to Peer Loan</h3>
-					</div>
-				</div>
+				<br>
+				<br>
+				<br>
+				<br><div class="panel panel-default">
+  						<div class="panel-body">
+  							
+  							<form class="form-signin">
+							<img class="mb-4" src="assets/img/paypal.jpg" alt width="129" height="32" style="margin-left:auto;margin-right:auto">
+							<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+							<label for="inputEmail" class="sr-only">Email address</label>
+							<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+							<label for="inputPassword" class="sr-only">Password</label>
+							<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+							<div class="checkbox mb-3">
+							<label>
+								<input type="checkbox" value="remember-me">
+								" Remember me "
+							</label>
+							</div>
+
+							<button id="ssbutton" class="btn btn-lg btn-primary btn-block" type="submit" onclick="location.href='second_sign_in.html'">Sign in</button>
+							</form>
+  						</div>
+						
+						</div>
+					
+
 			</div>
 
 		</div>
@@ -98,70 +116,7 @@
 	<!-- you can use the class main-raised if you want the main area to be as a page with shadows -->
 	<div class="main">
 		<div class="container">
-			<div class="container">
-	            <div class="title">
-	                <h2>Top Ideas</h2>
-	            </div>
 
-		        <div id="buttons">
-					<div class="title">
-						<h3>Buttons <br />
-							<small>Pick your style</small>
-						</h3>
-					</div>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<button class="btn btn-primary">Default</button>
-							<button class="btn btn-primary btn-round">Round</button>
-							<button class="btn btn-primary btn-round">
-								<i class="material-icons">favorite</i> With Icon
-							</button>
-							<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-								<i class="material-icons">favorite</i>
-							</button>
-							<button class="btn btn-primary btn-simple">Simple</button>
-						</div>
-					</div>
-					<div class="title">
-	                    <h3><small>Pick your size</small></h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn btn-primary btn-xs">x-Small</button>
-	                        <button class="btn btn-primary btn-sm">Small</button>
-	                        <button class="btn btn-primary">Regular</button>
-	                        <button class="btn btn-primary btn-lg">Large</button>
-	                    </div>
-	                </div>
-
-					<div class="title">
-	                    <h3><small> Pick your color </small></h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn">Default</button>
-	                        <button class="btn btn-primary">Primary</button>
-	                        <button class="btn btn-info">Info</button>
-	                        <button class="btn btn-success">Success</button>
-	                        <button class="btn btn-warning">Warning</button>
-	                        <button class="btn btn-danger">Danger</button>
-	                    </div>
-	                </div>
-	                <div class="title">
-	                    <h3>Links</h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn btn-simple">Default</button>
-	                        <button class="btn btn-simple btn-primary ">Primary</button>
-	                        <button class="btn btn-simple btn-info">Info</button>
-	                        <button class="btn btn-simple btn-success">Success</button>
-	                        <button class="btn btn-simple btn-warning">Warning</button>
-	                        <button class="btn btn-simple btn-danger">Danger</button>
-	                    </div>
-	                </div>
-		        </div>
-		    </div>
 
 			<!-- here you can add your content -->
 			
@@ -171,7 +126,12 @@
 
 
 </body>
-
+	
+	<script type="text/javascript">
+    document.getElementById("ssbutton").onclick = function () {
+        location.href = "second_sign_in.html";
+    };
+	</script>
 	<!--   Core JS Files   -->
 	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
