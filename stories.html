@@ -181,8 +181,21 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">No interests!</button>
-        <button type="button" class="btn btn-info btn-simple" data-dismiss="modal">I want to Loan!</button>
+        <button type="button" class="btn btn-info btn-simple" data-dismiss="modal"  data-toggle="modal" data-target="#confirm">I want to Loan!</button>
         <button type="button" class="btn btn-info btn-simple" data-dismiss="modal" id="ssbutton" type="submit">Know more about the applicant!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        Success!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-simple" data-dismiss="confirm" id="ssbutton2" type="submit">Continue searching!</button>
+        <button type="button" class="btn btn-info btn-simple" data-dismiss="confirm" id="ssbutton1" type="submit">Go to my page!</button>
       </div>
     </div>
   </div>
@@ -192,6 +205,12 @@
 	<script type="text/javascript">
     document.getElementById("ssbutton").onclick = function () {
         location.href = "profileB.html";
+    };
+    document.getElementById("ssbutton1").onclick = function () {
+        location.href = "profile.html";
+    };
+    document.getElementById("ssbutton2").onclick = function () {
+        location.href = "stories.html";
     };
 	</script>
 	<!--   Core JS Files   -->
